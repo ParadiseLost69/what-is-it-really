@@ -1,6 +1,6 @@
 import React from "react";
 import Parser from "rss-parser";
-
+import Image from "next/image";
 export const metadata = {
   title: "Podcasts | What is it Really?",
   description: "a podcast",
@@ -28,9 +28,11 @@ export default async function Podcasts() {
               className="flex-col justify-center items-center sm:items-stretch sm:flex-row flex border-2 my-4  p-4 rounded "
             >
               <a href={podcast.link}>
-                <img
+                <Image
+                  height={150}
+                  width={150}
                   src={podcast.itunes.image}
-                  className="max-w-44 mx-4"
+                  className="mx-4"
                   alt="Robot internals and a microphone with the words 'What is it Really?'"
                 />
               </a>
