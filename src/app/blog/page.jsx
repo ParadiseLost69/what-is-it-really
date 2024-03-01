@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../components/Title";
 
 export const metadata = {
   title: "Blog | What is it Really?",
@@ -7,8 +8,8 @@ export const metadata = {
 };
 export default function Blog() {
   return (
-    <div className="text-xl underline text-center ">
-      <h1>Blog</h1>
+    <div className="text-center ">
+      <Title>Blog</Title>
     </div>
   );
 }
