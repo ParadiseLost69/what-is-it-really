@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
+import BlogCard from "../components/BlogCard";
 
 export const metadata = {
   title: "Blog | What is it Really?",
@@ -8,8 +9,15 @@ export const metadata = {
 };
 export default function Blog() {
   return (
-    <main className=" text-center">
-      <Title>Blog</Title>
+    <main>
+      <div className="text-center">
+        <Title>Blog</Title>
+      </div>
+      <BlogCard
+        title="Introduction"
+        description="Welcome to What is it Really?"
+        link="#"
+      ></BlogCard>
     </main>
   );
 }

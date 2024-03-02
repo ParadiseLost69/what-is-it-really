@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="flex flex-col items-center min-h-screen px-4">
           <nav className="w-full max-w-screen-2xl">
-            <ul className="flex justify-between px-8 py-4">
+            <ul className="flex justify-between px-6 py-8">
               <li>
                 <Link href="/">Home</Link>
               </li>
