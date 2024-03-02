@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
 
           {/* Footer that stays at the bottom */}
           <footer className="w-full max-w-screen-2xl py-4">
-            <p className="text-center">© </p>
+            <p className="text-center">© What is it Really? 2024</p>
           </footer>
         </div>
       </body>

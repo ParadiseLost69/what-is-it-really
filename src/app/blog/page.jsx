@@ -8,8 +8,8 @@ export const metadata = {
 };
 export default function Blog() {
   return (
-    <div className="text-center ">
+    <main className=" text-center">
       <Title>Blog</Title>
-    </div>
+    </main>
   );
 }
