@@ -28,6 +28,10 @@ body {
 .mt-30vh {
   margin-top: 30vh;
 }
+.mt-70vh {
+  margin-top: 70vh;
+  color: rgb(0, 32, 64);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

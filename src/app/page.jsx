@@ -10,7 +10,7 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <main className="text-center">
+    <div>
       <div
         className="absolute left-0 -z-10 flex top-0 w-screen h-screen"
         style={{
@@ -22,13 +22,14 @@ export default function Home() {
       >
         {/* <Image src="/img/motherboard.jpg" width={1920} height={1080} /> */}
       </div>
-      <div className="h-screen flex flex-col m mt-30vh items-center">
+      <div className="flex flex-col m mt-30vh items-center">
         <h1 className="text-4xl sm:text-7xl" style={{ fontFamily: "Impact" }}>
           What is it{" "}
           <span className="text-secondary bold font-bold">Really</span>?
         </h1>
         <h2 className={inter + "text-xl sm:text-3xl"}>Technology Uncovered</h2>
       </div>
-    </main>
+      <h1 className="mt-70vh text-4xl text-center mb-40">HEY</h1>
+    </div>
   );
 }

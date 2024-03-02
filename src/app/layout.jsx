@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/podcast">Podcasts</Link>
+                <Link href="episodes">Episodes</Link>
               </li>
               <li>
                 <Link href="/about">About</Link>
