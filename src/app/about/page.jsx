@@ -7,7 +7,9 @@ export const metadata = {
 export default function About() {
   return (
     <main className="text-center">
-      <Title>About</Title>
+      <Title>
+        About the <span className="text-secondary">Podcast</span>
+      </Title>
       <p className="text-2xl my-2 text-left">
         Have you ever wanted to know more about how technology{" "}
         <span className="text-red-400">works</span>?

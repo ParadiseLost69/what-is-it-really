@@ -30,8 +30,54 @@ body {
 }
 .mt-70vh {
   margin-top: 70vh;
-  color: rgb(0, 32, 64);
+  color: #002040;
 }
+
+/*ANIMATIONS*/
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-title {
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.sub-title {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.fade-in-button {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards 0.7s;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

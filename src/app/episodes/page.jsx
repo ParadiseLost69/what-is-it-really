@@ -19,7 +19,9 @@ export default async function Episodes() {
   const { items: podcasts } = await getPodcasts();
   return (
     <div className="text-center">
-      <Title>Episodes</Title>
+      <Title>
+        Episode <span className="text-secondary">Archive</span>
+      </Title>
 
       <div className="flex justify-center items-center">
         {" "}
@@ -36,7 +38,8 @@ export default async function Episodes() {
               className="flex-col justify-center items-center sm:items-stretch sm:flex-row flex my-8 p-8 rounded-3xl"
               style={{
                 backgroundImage:
-                  "linear-gradient(to top left, rgb(0,32,64,0.8), rgb(0, 32, 64, 0.8),  rgba(189, 189, 189, 0.8))",
+                  "linear-gradient(to top left, rgb(0,32,64,0.8), rgb(0, 40, 90, 0.8),  rgba(189, 189, 189, 0.8))",
+                background: "2px solid rgb(255,255,255,0.5)",
               }}
             >
               <a target="_blank" href={podcast.link}>

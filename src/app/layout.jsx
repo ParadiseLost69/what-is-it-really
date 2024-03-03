@@ -1,10 +1,13 @@
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  const pathName = usePathname();
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -12,16 +15,46 @@ export default function RootLayout({ children }) {
           <nav className="w-full max-w-screen-2xl">
             <ul className="flex justify-between px-6 py-8">
               <li>
-                <Link href="/">Home</Link>
+                <Link
+                  href="/"
+                  className={
+                    pathName === "/" ? "underline underline-offset-8" : ""
+                  }
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="episodes">Episodes</Link>
+                <Link
+                  href="episodes"
+                  className={
+                    pathName === "/episodes"
+                      ? "underline underline-offset-8"
+                      : ""
+                  }
+                >
+                  Episodes
+                </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link
+                  className={
+                    pathName === "/about" ? "underline underline-offset-8" : ""
+                  }
+                  href="/about"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/blog">Blog</Link>
+                <Link
+                  className={
+                    pathName === "/blog" ? "underline underline-offset-8" : ""
+                  }
+                  href="/blog"
+                >
+                  Blog
+                </Link>
               </li>
             </ul>
           </nav>
