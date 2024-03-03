@@ -33,8 +33,26 @@ body {
   color: #002040;
 }
 
+.rotate {
+  transform: rotate(90deg);
+}
+
+.active-nav {
+  transition: all 1s;
+  animation: fadeInLeft 0.15s ease-out forwards;
+}
 /*ANIMATIONS*/
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes fadeInDown {
   from {
     opacity: 0;
