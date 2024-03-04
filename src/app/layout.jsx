@@ -5,12 +5,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+  <link rel="icon" href="/favicon.png" sizes="any" />;
 
   const pathName = usePathname();
   return (
@@ -53,8 +55,18 @@ export default function RootLayout({ children }) {
             </ul>
           </nav>
           {/*NAV MENU FOR LARGE SCREEN */}
-          <nav className="w-full max-w-screen-2xl hidden sm:block">
-            <ul className="flex justify-between px-6 py-8">
+          <nav className="w-full max-w-screen-2xl hidden sm:block sm:flex sm:justify-between">
+            <Link href="/">
+              {" "}
+              <Image
+                className="py-4"
+                src="/img/logo__what-is-it-really.png"
+                height={60}
+                width={150}
+                alt="What is it Really logo"
+              />
+            </Link>
+            <ul className="flex justify-end sm:gap-20 lg:gap-40 px-6 py-8">
               <li>
                 <Link
                   href="/"
