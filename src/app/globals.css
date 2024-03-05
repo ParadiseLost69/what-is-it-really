@@ -25,6 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.mt-25vh {
+  margin-top: 25vh;
+}
+
 .mt-30vh {
   margin-top: 30vh;
 }

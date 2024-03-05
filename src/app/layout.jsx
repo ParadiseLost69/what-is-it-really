@@ -116,8 +116,10 @@ export default function RootLayout({ children }) {
           <main className="flex-grow w-full max-w-screen-2xl">{children}</main>
 
           {/* Footer that stays at the bottom */}
-          <footer className="w-full max-w-screen-2xl py-4">
-            <p className="text-center">© What is it Really? 2024</p>
+          <footer className="w-screen py-4">
+            <p className="text-center p-6 bg-black">
+              © What is it Really? 2024
+            </p>
           </footer>
         </div>
       </body>
