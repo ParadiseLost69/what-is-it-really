@@ -354,8 +354,8 @@ export default function BlogPost() {
           alt="the first server with a note that says do not turn off"
         ></Image>
         <p className="text-gray-400">
-          A NeXt computer with a note that says "This machine is a server. Do
-          not turn off"
+          A NeXt computer with a note that says &quot;This machine is a server.
+          Do not turn off.&quot;
         </p>
 
         <p className="text-xl my-4">
@@ -577,7 +577,7 @@ export default function BlogPost() {
           <pre className="language-html">
             {" "}
             <code>
-              &lt;a href="https://url.com"&gt;&lt;p&gt; content
+              &lt;a href=&quot;https://url.com&quot;&gt;&lt;p&gt; content
               &lt;/p&gt;&lt;/a&gt;
             </code>
           </pre>
