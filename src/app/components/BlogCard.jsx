@@ -1,17 +1,32 @@
 import Link from "next/link";
+import Image from "next/image";
+import WhiteButton from "./WhiteButton";
 
-export default function BlogCard({ title, description, link }) {
+export default function BlogCard({ title, description, link, imageSrc }) {
   return (
     <div className=" ">
-      <h2 className="text-xl my-2 ">{title}</h2>
-      <p className="text-lg my-4 ">{description}</p>
-      <Link href={link}>
-        <button className="text-lg mb-4 border bg-white text-black p-3 hover:text-white hover:bg-black active:bg-gray-400 active:text-gray-500 transition-colors duration-200">
+      <div className="inline-flex flex-col items-center m-20 ">
+        <Image
+          src={imageSrc}
+          width={200}
+          height={200}
+          className="w-full rounded-t-3xl md:rounded-3xl "
+          style={{ maxWidth: "400px" }}
+        />{" "}
+        <h2
+          className=" text-black p-5 text-md mt-0 md:-mt-10 md:text-xl md:ml-60 mx-auto  text-center rounded-b-3xl md:rounded-3xl bg-white"
+          style={{
+            boxSizing: "border-box",
+          }}
+        >
           {" "}
-          Read more
-        </button>
-      </Link>
-      <hr />
+          {title}
+        </h2>
+        <div className="md:ml-60 my-4">
+          <p>{description}</p>
+          <WhiteButton href={link}>Learn More</WhiteButton>
+        </div>
+      </div>
     </div>
   );
 }

@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
               </li>
               <li>
                 <Link
-                  href="episodes"
+                  href="/episodes"
                   className={
                     pathName === "/episodes"
                       ? "underline underline-offset-8"
