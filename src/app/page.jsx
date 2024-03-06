@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import MainPageContent from "./components/MainPage/MainPageContent";
+import Parser from "rss-parser";
 
 const inter = Inter({ subsets: ["latin"], style: "normal" });
 
@@ -79,8 +80,14 @@ export default function Home() {
           </p>
         </MainPageContent>
 
-        <MainPageContent bgColor="bg-gray-700" padding="p-10">
-          <h2 className="text-center">he dsdas kdskladlaksmm dmsklma</h2>
+        <MainPageContent bgColor="bg-gray-700" padding="p-5">
+          <h2
+            id="description"
+            className=" tracking-wide font-primary text-center text-4xl"
+          >
+            Featured <span className="text-secondary">Episode</span>
+          </h2>
+          <p className="mt-4"></p>
         </MainPageContent>
       </div>
     </div>
