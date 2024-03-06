@@ -20,15 +20,15 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="flex flex-col items-center min-h-screen px-4">
           {/*NAV MENU FOR SMALL SCREEN */}
-          <nav className="sm:hidden block w-full max-w-screen-2xl px-4 py-8">
+          <nav className="sm:hidden block w-full px-4 py-8">
             <RxHamburgerMenu
               onClick={toggleMenu}
-              className={`z-20 text-4xl transition-all relative hover:cursor-pointer ${
+              className={`z-30 text-4xl transition-all relative hover:cursor-pointer ${
                 isOpen ? "rotate" : ""
               }`}
             />
             <ul
-              className={`flex flex-col z-10 bg-black p-6  ${
+              className={`flex flex-col z-20 bg-black p-6  ${
                 isOpen ? "absolute top-0 left-0 w-full active-nav" : "hidden"
               }`}
             >
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
             </ul>
           </nav>
           {/*NAV MENU FOR LARGE SCREEN */}
-          <nav className="w-full max-w-screen-2xl hidden sm:block sm:flex sm:justify-between">
+          <nav className="w-full  hidden sm:block sm:flex sm:justify-between px-4">
             <Link href="/">
               {" "}
               <Image
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
           </nav>
 
           {/* Main content area that grows to take available space, if necessary */}
-          <main className="flex-grow w-full max-w-screen-2xl">{children}</main>
+          <main className="flex-grow">{children}</main>
 
           {/* Footer that stays at the bottom */}
           <footer className="w-screen py-4">

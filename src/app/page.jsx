@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MainPageContent from "./components/MainPage/MainPageContent";
 
 const inter = Inter({ subsets: ["latin"], style: "normal" });
 
@@ -56,9 +57,31 @@ export default function Home() {
       </div>
 
       <div className="text-xl mx-1/2 flex justify-center animate-bounce my-20">
-        <a href="#text">
+        <a href="#description">
           <FaArrowDown className="text-white opacity-50 text-4xl text-8xl" />
         </a>
+      </div>
+      <div className=" mt-40 bg-black width-screen " style={{ width: "100vw" }}>
+        <h2
+          id="description"
+          className=" tracking-wide font-primary pt-4 text-center text-4xl"
+        >
+          Behind the <span className="text-secondary">Bytes</span>
+        </h2>
+        <MainPageContent>
+          <p>
+            From the humble beginnings of internet protocols to the latest in AI
+            advancements, our team delves deep into the heart of technology,
+            making the complex comprehensible. Join us as we explore the stories
+            behind the tech that powers our daily lives, bringing you closer to
+            the marvels of modern engineering and the brilliant minds that make
+            it all possible.
+          </p>
+        </MainPageContent>
+
+        <MainPageContent bgColor="bg-gray-700" padding="p-10">
+          <h2 className="text-center">he dsdas kdskladlaksmm dmsklma</h2>
+        </MainPageContent>
       </div>
     </div>
   );
