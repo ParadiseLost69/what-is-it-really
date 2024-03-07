@@ -6,6 +6,9 @@ import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import Image from "next/image";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
+//Google Analytics
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -123,6 +126,7 @@ export default function RootLayout({ children }) {
           </footer>
         </div>
       </body>
+      <GoogleAnalytics gaId="G-2RJFQJY05W" />
     </html>
   );
 }

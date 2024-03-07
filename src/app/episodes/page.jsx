@@ -4,6 +4,7 @@ import Image from "next/image";
 import { format } from "date-fns";
 import Title from "../components/Title";
 
+
 export const metadata = {
   title: "Podcasts | What is it Really?",
   description: "a podcast",
