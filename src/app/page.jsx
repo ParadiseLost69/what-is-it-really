@@ -26,6 +26,7 @@ export default function Home() {
       >
         {/* <Image src="/img/motherboard.jpg" width={1920} height={1080} /> */}
       </div>
+
       <div className="flex flex-col m mt-25vh items-center">
         <h1
           className="text-4xl sm:text-7xl main-title"

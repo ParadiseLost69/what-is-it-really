@@ -1,0 +1,82 @@
+{
+  "workbench.colorCustomizations": {
+    "[RGB Theme]": {
+      "sideBar.background": "#040527",
+      "statusBar.background": "#040527",
+      "editor.background": "#04071e",
+      "editor.foreground": "#06f8f8",
+      "editor.selectionBackground": "#00ffb35e",
+      "editor.selectionHighlightBackground": "#0f28786d",
+      "editor.selectionHighlightBorder": "#06f8f8",
+      "sideBar.border": "#1d0404",
+      "editor.findMatchBackground": "#00b3ff3b",
+      "tab.activeBackground": "#21407d",
+      "tab.activeBorderTop": "#08f5b2",
+      "tab.activeForeground": "#00ff99",
+      "tab.inactiveBackground": "#0206e33b",
+      "activityBar.background": "#020723bf",
+      "panel.background": "#040527",
+      "titleBar.border": "#00b7ff",
+      "titleBar.inactiveBackground": "#0227525a",
+      "titleBar.activeBackground": "#022e60"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[RGB Theme]": {
+      "textMateRules": [
+        {
+          "scope": "entity.other.attribute-name",
+          "settings": {
+            "foreground": "#2baae9",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "entity.name.tag",
+          "settings": {
+            "foreground": "#e97d62"
+          }
+        },
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "foreground": "#927fff"
+          }
+        },
+        {
+          "scope": "string.quoted",
+          "settings": {
+            "foreground": "#dec858"
+          }
+        },
+        {
+          "scope": "support.type.property-name",
+          "settings": {
+            "foreground": "#ee87d6"
+          }
+        },
+        {
+          "scope": ["variable.other"],
+          "settings": {
+            "foreground": "#4ffced"
+          }
+        },
+        {
+          "scope": "meta.object-literal.key",
+          "settings": {
+            "foreground": "#cf53f1"
+          }
+        },
+        {
+          "scope": "storage.type.function",
+          "settings": {
+            "foreground": "#b06efc",
+            "fontStyle": "bold italic"
+          }
+        }
+      ],
+
+      "comments": "#11af117c"
+    }
+  }
+}

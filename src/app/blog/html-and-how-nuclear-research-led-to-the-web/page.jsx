@@ -8,7 +8,12 @@ export const metadata = {
 };
 export default function BlogPost() {
   const htmlCode1 = "<p> Content </p>";
+  const htmlCode2 = `<a href=&quot;https://url.com&quot>
+  <p> content </p>
+  </a>;`;
   const html1 = Prism.highlight(htmlCode1, Prism.languages.html, "html");
+
+  const html2 = Prism.highlight(htmlCode2, Prism.languages.html, "html");
   return (
     <div>
       <div className="flex justify-center mb-4">
@@ -577,8 +582,11 @@ export default function BlogPost() {
           <pre className="language-html">
             {" "}
             <code>
-              &lt;a href=&quot;https://url.com&quot;&gt;&lt;p&gt; content
-              &lt;/p&gt;&lt;/a&gt;
+              &lt;a href=&quot;https://url.com&quot;&gt;
+              <br />
+              &lt;p&gt; content &lt;/p&gt;
+              <br />
+              &lt;/a&gt;
             </code>
           </pre>
         </div>
