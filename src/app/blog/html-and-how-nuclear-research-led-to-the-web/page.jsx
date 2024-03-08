@@ -7,13 +7,6 @@ export const metadata = {
     "What is it Really? is a podcast dedicated to understanding the technology that shapes our lives.",
 };
 export default function BlogPost() {
-  const htmlCode1 = "<p> Content </p>";
-  const htmlCode2 = `<a href=&quot;https://url.com&quot>
-  <p> content </p>
-  </a>;`;
-  const html1 = Prism.highlight(htmlCode1, Prism.languages.html, "html");
-
-  const html2 = Prism.highlight(htmlCode2, Prism.languages.html, "html");
   return (
     <div>
       <div className="flex justify-center mb-4">
