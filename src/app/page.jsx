@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import MainPageContent from "./components/MainPage/MainPageContent";
 import Parser from "rss-parser";
+import Slider from "./components/Slider";
 
 const inter = Inter({ subsets: ["latin"], style: "normal" });
 
@@ -88,6 +89,7 @@ export default function Home() {
           >
             Featured <span className="text-secondary">Episode</span>
           </h2>
+          <Slider></Slider>
           <p className="mt-4"></p>
         </MainPageContent>
       </div>
